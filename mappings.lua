@@ -31,7 +31,13 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-f>"] = { ":Telescope find_files<CR>", desc = "Find Files" },  -- change description but the same command
+    -- resize window
+    ["tl"] = { ":vertical resize +10<CR>" },
+    ["th"] = { ":vertical resize -10<CR>" },
+    ["tj"] = { ":resize -10<CR>" },
+    ["tk"] = { ":resize +10<CR>" },
+    ["t=>"] = { "<C-w>=", desc = "Resize equal" },
   },
   t = {
     -- setting a mapping to false will disable it
