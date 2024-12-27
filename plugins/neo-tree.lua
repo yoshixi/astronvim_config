@@ -14,7 +14,6 @@ return {
         mappings = {
           ["t"] = false, -- disable space until we figure out which-key disabling
         },
-        position = "float",
         popup = { -- settings that apply to float position only
             size = { height = "80", width = "80" },
             position = "50%", -- 50% means center it

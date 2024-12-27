@@ -22,7 +22,7 @@ return {
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
-    virtual_text = true,
+    virtual_text = false,-- to use lsp_lines https://github.com/maan2003/lsp_lines.nvim
     underline = true,
   },
 
