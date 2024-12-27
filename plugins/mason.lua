@@ -42,19 +42,6 @@ return {
         -- "biome"
         -- "stylua",
       })
-
-      opts.handlers = require("astronvim.utils").list_insert_unique(opts.handlers, {
-         prettier = function()
-            require("null-ls").register(require("null-ls").builtins.formatting.prettier.with {
-              condition = function(utils)
-                return utils.root_has_file "package.json"
-                  or utils.root_has_file ".prettierrc"
-                  or utils.root_has_file ".prettierrc.json"
-                  or utils.root_has_file ".prettierrc.js"
-              end,
-            })
-          end
-       })
     end,
   },
   {
